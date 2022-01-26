@@ -11,19 +11,25 @@ namespace LR
     {
         static void Main(string[] args)
         {
-            RedheadDuck duck1 = new RedheadDuck();
-            Mallart duck2 = new Mallart();
-
-            Duck[] mas = new Duck[] { duck1, duck2 };
-
-            for (int i = 0; i < mas.Length; i++)
+            Duck duck1 = new MallardDuck();
+            Duck duck2 = new ReadheaddDuck();
+            Duck duck3 = new RubberDuck();
+            Duck duck4 = new DecoyDuck();
+            Duck[] strDuck = new Duck[] { duck1, duck2, duck3, duck4 };
+            foreach (Duck duck in strDuck)
             {
-                Console.WriteLine(mas[i].Swim());
-                Console.WriteLine(mas[i].Display());
-                Console.WriteLine(mas[i].Quack());
+                Console.WriteLine(duck.swim());
+                Console.WriteLine(duck.display());
+                if (duck is Quackble)
+                {
+                    Console.WriteLine((duck as Quackble).quack());
+                }
+                if (duck is Flyable)
+                {
+                    Console.WriteLine((duck as Flyable).fly());
+                }
             }
-
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }

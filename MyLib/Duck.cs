@@ -8,14 +8,10 @@ namespace MyLib
 {
     public abstract class Duck
     {
-        public string Quack()
+        public string swim()
         {
-            return "Quack" + " " + this.GetType();
+            return "swim " + this.GetType();
         }
-        public string Swim()
-        {
-            return "Swim" + " " + this.GetType();
-        }
-        public abstract string Display();
+        public abstract string display();
     }
 }

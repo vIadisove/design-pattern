@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mallart.cs" />
+    <Compile Include="RubberDuck.cs" />
+    <Compile Include="DecoyDuck.cs" />
+    <Compile Include="Flyable.cs" />
+    <Compile Include="Quackble.cs" />
+    <Compile Include="MallardDuck.cs" />
     <Compile Include="RedheadDuck.cs" />
     <Compile Include="Duck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

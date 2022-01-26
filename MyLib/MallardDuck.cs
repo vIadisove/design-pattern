@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLib
 {
-    public class ReadheaddDuck : Duck, Quackble, Flyable
+    public class MallardDuck : Duck, Quackble, Flyable
     {
         public override string display()
         {
